@@ -36,6 +36,18 @@ input:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
+.satorini-1{
+    transition: transform 1s ease;
+}
+.satorini-1:hover{
+    transform: scale(1.1);
+}
+.satorini-2{
+    transition: transform 1s ease;
+}
+.satorini-2:hover{
+    transform: scale(1.1);
+}
 .rev-text,.rev-photo{
     transition: transform 1s ease;
 }
@@ -117,14 +129,14 @@ input:hover{
 }
 
 /* banner */
-#banner {
+.banner {
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/banner.png');
     border-radius: 16px;
     height: 31.25rem;
     text-align: center;
 }
 
-#banner h1 {
+.banner h1 {
     padding-top: 6.625rem;
     margin-bottom: 1.5rem;
     color: #FFF;
@@ -135,7 +147,7 @@ input:hover{
     line-height: normal;
 }
 
-#banner p {
+.banner p {
     color: #FFF;
     text-align: center;
     font-family: Mulish;
@@ -146,7 +158,7 @@ input:hover{
     margin-bottom: 1.5rem;
 }
 
-#banner .input {
+.banner .input {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     display: inline-flex;
@@ -155,7 +167,7 @@ input:hover{
     gap: 24px;
 }
 
-#banner .input input {
+.banner .input input {
     border-radius: 8px;
     background: #FFF;
     width: 10rem;
@@ -175,7 +187,7 @@ input:hover{
     cursor: pointer;
 }
 
-#banner .btn {
+.banner .btn {
     border-radius: 8px;
     background: #FF5400;
     width: 10rem;
@@ -193,11 +205,11 @@ input:hover{
     line-height: normal;
 }
 
-#banner .input-box {
+.banner .input-box {
     position: relative;
 }
 
-#banner .input-box .down-arrow .fa-solid {
+.banner .input-box .down-arrow .fa-solid {
     position: absolute;
     bottom: 14px;
     right: 20px;
@@ -244,7 +256,7 @@ input:hover{
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    padding: 14px;
+    /* padding: 14px; */;
 }
 
 .title {
@@ -319,7 +331,10 @@ input:hover{
     font-size: 28px;
     font-weight: 800;
 }
-
+.destination  p{
+    max-width: 643px;  
+   margin-left: 250px; 
+}
 .destination .img-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -677,13 +692,13 @@ ul li {
     gap: 24px;
 }
 
-.newsletter-form {
+.news-form {
     padding: 40px;
     border-radius: 16px;
     border: 1px solid #FF5400;
 }
 
-.newsletter-form h3 {
+.news-form h3 {
     color: #131318;
     font-family: Mulish;
     font-size: 24px;
@@ -692,7 +707,7 @@ ul li {
     line-height: normal;
     margin-bottom: 16px;
 }
-.newsletter-form p {
+.news-form p {
     color: #5A5A5D;
     font-family: Mulish;
     font-size: 16px;
@@ -700,21 +715,21 @@ ul li {
     font-weight: 400;
     line-height: 26px; /* 162.5% */
 }
-.newsletter-form hr {
+.news-form hr {
     margin: 24px 0;
     opacity: 0.5;
 }
-.newsletter-form hr:hover{
+.news-form hr:hover{
     background-color:  #FF5400;
 }
-.newsletter-img img {
+.news-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
 }
 
-.newsletter-form form input {
+.news-form form input {
     width: 100%;
     padding: 16px 20px;
     margin-bottom: 16px;
@@ -724,7 +739,7 @@ ul li {
     outline: 0;
 }
 
-.newsletter-form form button {
+.news-form form button {
     width: 100%;
     padding: 14px 0;
     border-radius: 8px;
@@ -732,7 +747,7 @@ ul li {
     border: 0;
 }
 
-.newsletter-img-text {
+.news-img-text {
     max-width: 324px;
     border-radius: 16px;
     background: #FF5400;
@@ -747,17 +762,17 @@ ul li {
 
 }
 
-.newsletter-img {
+.news-img {
     position: relative;
 }
 
-.newsletter-img-text h4 {
+.news-img-text h4 {
     font-size: 24px;
     margin-bottom: 4px;
     font-weight: 400;
 }
 
-.newsletter-img-text h2 {
+.news-img-text h2 {
     font-size: 32px;
     font-weight: 800;
 }
@@ -853,18 +868,18 @@ small {
     }
 
 
-    #banner h1 {
+    .banner h1 {
         padding-top: 32px;
         font-size: 2rem;
     }
 
-    #banner p {
+    .banner p {
         margin-left: 30px;
         margin-right: 15px;
 
     }
 
-    #banner .input {
+    .banner .input {
         flex-direction: column;
     }
 
@@ -878,7 +893,7 @@ small {
         margin-bottom: 20px;
     }
 
-    #banner {
+    .banner {
         /* width: 90%; */
         margin-bottom: -50px;
     }
@@ -904,8 +919,11 @@ small {
     .destination {
         margin-bottom: 100px;
     }
-
-
+    
+    .destination  p{
+        max-width: 400px;  
+       margin-left: 35px; 
+    }
     .destination .img-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, 1fr);
@@ -950,8 +968,10 @@ small {
     .choose {
         margin-top: 100px;
         margin: auto;
+        padding: 0 40px;
     }
-
+   
+    
     .box {
         flex-direction: column;
         width: 80%;
@@ -1030,38 +1050,34 @@ small {
     }
 
     .newsletter {
-        padding: 0 20px;
         gap: 16px;
         flex-direction: column;
     }
 
-    .newsletter-form {
-        padding: 24px;
-    }
 
-    .newsletter-form h3 {
+    .news-form h3 {
         font-size: 20px;
         margin-bottom: 8px;
     }
 
-    .newsletter-img-text {
+    .news-img-text {
         padding: 15px 30px;
         right: -15px;
     }
 
-    .newsletter-img-text h4 {
+    .news-img-text h4 {
         font-size: 16px;
     }
 
-    .newsletter-img-text h2 {
+    .news-img-text h2 {
         font-size: 22px;
     }
 
-    .newsletter-img img {
+    .news-img img {
         height: 300px;
     }
 
-    .newsletter-form hr {
+    .news-form hr {
         margin: 16px 0;
     }
 
