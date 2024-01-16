@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trailblaze Travels</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6d4eb52877.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon">
 </head>
-
 <body>
+    <!-- heeader start -->
     <header>
-        <section class="container">
+        <section class="container" id="header">
             <nav class="navbar">
                 <div class="logo">
                     <img src="Images/icon.png">
                     <h3>Trailblaze <span>Travels</span></h3>
                 </div>
-                <div class="list">
+                <div class="menu">
                     <ul class="items">
-                        <li><a href="" class="home">Home</a></li>
-                        <li><a href="">Packages</a></li>
-                        <li><a href="">Testimonial</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#" class="home">Home</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                     <div class="nav-icon">
                         <i class="fa-solid fa-bars"></i>
@@ -34,45 +34,53 @@
         </section>
     </header>
 
-    <main>
-        <section class="container banner">            <h1>Explore Your Travel</h1>
-            <p>Trailblaze Travels: Crafting unique adventures that redefine travel. Elevate your journey with us.</p>
-            <div class="input">
-                <input class="one" type="text" placeholder="Where Go">
-                <div class="input-box">
-                    <input type="text" placeholder="When">
-                    <div class="down-arrow">
-                        <i class="fa-solid fa-angle-down"></i>
+    <!-- header end -->
+    <menu>
+        <!-- banner start -->
+        <section class="container">
+            <div class="banner">
+                <h1>Explore Your Travel</h1>
+                <p>Trailblaze Travels: Crafting unique adventures that redefine travel. Elevate your journey with us.</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Where go">
+                    <div class="input-field">
+                        <input type="text" placeholder="When">
+                        <div class="down-arrow">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Select Type">
-                    <div class="down-arrow">
-                        <i class="fa-solid fa-angle-down"></i>
+                    <div class="input-field">
+                        <input type="text" placeholder="Select Type">
+                        <div class="down-arrow">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
                     </div>
+                    <button><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
                 </div>
-                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
-
             </div>
-        </section>
-        <section class="container part-one">
-            <div class="container text">
+       </section>
+        <!-- banner end -->
+
+        <!-- popula travel start -->
+        <section class="container popular-travel">
+            <div class="pupular-text">
                 <h1>Our Popular Tours</h1>
                 <p>Explore iconic destinations with Trailblaze Travels' Popular Tours. From the majestic Everest Base Camp to the historic Machu Picchu, embark on unforgettable adventures.</p>
-                <p><img style="width: 10px; fill: black; margin-left: 10px; margin-right: 5px;"
-                        src="Images/full-stop.png" alt="">Embark on the ultimate adventure with Trailblaze Travels to Mount Everest Base Camp. 
-                </p>
-                <p><img style="width: 10px; fill: black;margin-left: 10px; margin-right: 5px;"
-                        src="Images/full-stop.png" alt="">Trailblaze Travels invites you to discover the enchanting beauty and cultural richness of Nepal, where every moment is an adventure.</p>
-                <p><img style="width: 10px; fill: black;margin-left: 10px; margin-right: 5px;"
-                        src="Images/full-stop.png" alt="">Unwind in paradise with Trailblaze Travels' Saint Martin Tour, where turquoise waters and pristine beaches create an idyllic setting for a blissful tropical escape like no other.</p>
+                <ul>
+                    <li><p>Embark on the ultimate adventure with Trailblaze Travels to Mount Everest Base Camp.</p></li>
+                    <li><p>Trailblaze Travels invites you to discover the enchanting beauty and cultural richness of Nepal, where every moment is an adventure.</p></li>
+                    <li><p>Unwind in paradise with Trailblaze Travels' Saint Martin Tour, where turquoise waters and pristine beaches create an idyllic setting for a blissful tropical escape like no other.</p></li>
+                </ul>
                 <p>Elevate your journey, whether scaling Everest or savoring Saint Martin's blissful beaches.</p>
                 <button>Read More</button>
             </div>
-            <div class="textimg">
-                <img src="Images/text.png" alt="">
+            <div class="popular-img">
+                <img src="images/text.png">
             </div>
         </section>
+        <!-- popula travel end -->
+
+        <!-- choose your destination start-->
         <section class="container destination">
             <div class="des-text">
                 <h1>Choose Your Destination</h1>
@@ -124,145 +132,171 @@
                 </div>
             </div>
         </section>
-        <section class="title choose">
-            <h1>Whose Choose Us</h1>
-            <p>Choose Trailblaze Travels for expert guidance, personalized experiences, and a commitment to transforming your travel dreams into reality.</p>
-        </section>
-        <section class="container box">
-            <div class="choose-cards">
-                <div class="upper-choose">
+        <!-- choose your destination end-->
+        <!-- who choose us start -->
+        <section class="container choose-us" >
+            <div class="choose-text">
+                <h1>Why Choose Us</h1>
+                <p>Choose Trailblaze Travels for expert guidance, personalized experiences,<br> and a commitment to transforming your travel dreams into reality..</p>
+            </div>
+            <div class="choose-card">
+                <div class="upper">
                     <div class="card yellow-card">
                         <img src="Images/icons8-hotel-96.png">
                         <h3>Handpicked Hotels</h3>
-                        <p>Indulge in luxury and comfort with our Handpicked Hotels. Trailblaze Travels ensures a curated stay, embracing elegance and distinctive experiences</p>
+                        <p>Experience unparalleled excellence with Trailblaze Travels' World Class Service. Elevate your journey with our commitment to exceptional customer satisfaction and care.</p>
                     </div>
-                    <div class="card green-card">
+                    <div class="card blue-card">
                         <img src="Images/icons8-map-64.png">
                         <h3>World Class Service</h3>
                         <p>Experience unparalleled excellence with Trailblaze Travels' World Class Service. Elevate your journey with our commitment to exceptional customer satisfaction and care.</p>
                     </div>
                 </div>
-                <div class="lower-choose">
+                <div class="lower">
                     <div class="card pink-card">
                         <img src="Images/icons8-coupon-64.png">
                         <h3>Best Price Guarantee</h3>
-                        <p>Explore worry-free with our Best Price Guarantee, ensuring unbeatable value for your adventures. Trailblaze Travels—your trusted partner in affordable and unforgettable journeys.</p>
+                        <p>Best Price Guarantee</h3>
+                            <p>Explore worry-free with our Best Price Guarantee, ensuring unbeatable value for your adventures. Trailblaze Travels—your trusted partner in affordable and unforgettable journeys.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="title choose">
-            <h1>Deals & Discount</h1>
-            <p>Unlock savings and elevate your journey with Trailblaze Travels' exclusive Deals & Discounts. Embrace affordable adventures without compromise.</p>
+        <!-- who choose us end -->
+        <!-- discount start -->
+        <section class="container discount" >
+            <div class="discount-text">
+                <h1>Deals & Discounts</h1>
+                <p>Unlock savings and elevate your journey with Trailblaze Travels exclusive Deals & <br> Discounts. Embrace affordable adventures without compromise.</p>
+            </div>
+            <div class="card-container">
+                <div class="discount-card offer1">
+                    <div class="offer">
+                        <p class="span-part">
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-clock"></i></span> 7 Day / 6 Night
+                            </span>
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-user-group"></i></span> Max : 10
+                            </span>
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-location-dot"></i></span> Malaysia
+                            </span>
+                        </p>
+                        <h3>Tour To Satorini</h3>
+                        <p class="p">Embark on an enchanting journey with Trailblaze Travels - our Tour to Santorini promises breathtaking landscapes, vibrant culture, and cherished memories</p>
+                        <h4>Price: $1300-$1500</h4>
+                        <button >Book Now</button>
+                    </div>
+                </div>
+                <div class="discount-card offer2">
+                    <div class="offer">
+                        <p class="span-part">
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-clock"></i></span> 7 Day / 6 Night
+                            </span>
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-user-group"></i></span> Max : 10
+                            </span>
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-location-dot"></i></span> Malaysia
+                            </span>
+                        </p>
+                        <h3>Tour To Satorini</h3>
+                        <p class="p">Embark on an enchanting journey with Trailblaze Travels - our Tour to Santorini promises breathtaking landscapes, vibrant culture, and cherished memories</p>
+                        <h4>Price: $1300-$1500</h4>
+                        <button >Book Now</button>
+                    </div>
+                </div>
+                <div class="discount-card offer1">
+                    <div class="offer">
+                        <p class="span-part">
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-clock"></i></span> 7 Day / 6 Night
+                            </span>
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-user-group"></i></span> Max : 10
+                            </span>
+                            <span class="part">
+                                <span class="icon"><i class="fa-solid fa-location-dot"></i></span> Malaysia
+                            </span>
+                        </p>
+                        <h3>Tour To Satorini</h3>
+                        <p class="p">Embark on an enchanting journey with Trailblaze Travels - our Tour to Santorini promises breathtaking landscapes, vibrant culture, and cherished memories</p>
+                        <h4>Price: $1300-$1500</h4>
+                        <button >Book Now</button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="container satorini">
-            <div class="satorini-1">
+     <!-- discount end -->
+     <button style="text-align: center;" class="see-all-pakage">See All Pakage</button>
+         <!-- extra one -->
+    <section class="container discount">
+        <div class="card-container">
+            <div class="discount-card offer3">
+                <div class="off">
+                    <h3>Paracycling Escapades Unleashed</h3>
+                    <p class="p">From customizable outdoor experiences to exhilarating paracycling, our agency
+                        transforms your preferences into unforgettable moments.</p>
+                    <button >Book Now</button>
+                </div>
+            </div>
+     </section>
+     <!-- extra one end -->
+     <!-- extra two -->
+     <section class="container travelers-opinion">
+        <div class="opinion-heading">
+            <h1>Travelers Opinion</h1>
+        </div>
+        <div class="opinion-container">
+            <div class="opinion">
+                <img style="width: 100px;
+                margin-bottom: 10px;" src="Images/flatten.png">
+                <h4>Thailand</h4>
+                <p>Embark on a sensory journey with Trailblaze Travels in Thailand, where vibrant markets and serene beaches create a tapestry of unforgettable experiences. Explore the treasures of Southeast Asia with us</p>
+            </div>
+            <div class="opinion">
+                <img style="width: 100px; margin-bottom: 10px;" src="Images/everest-basecamp-life-er-camp_3x2.png">
+                <h4>Mount Everest Base Camp</h4>
+                <p>Trailblaze Travels offers transformative journeys, from conquering Everest's heights to basking in Saint Martin's tropical splendor, creating unforgettable adventures worldwide.</p>
+            </div>
+            <div class="opinion">
+                <img style="width: 100px; margin-bottom: 10px;" src="Images/srilanka.png">
+                <h4>Srilanka</h4>
+                <p>Embark on an exotic journey with Trailblaze Travels to Sri Lanka. Explore pristine beaches, ancient ruins, and vibrant markets, immersing in a tapestry of culture and nature.</p>
+            </div>
+            <div class="opinion">
+                <img style="width: 100px; margin-bottom: 10px;" src="Images/group4098.png">
+                <h4>Rangamati</h4>
+                <p>Experience the serene beauty of Rangamati with Trailblaze Travels. Nestled amidst hills and lakes, it's a journey into tranquility and nature's wonders..</p>
+            </div>
+        </div>
+    </section>
+     <!-- extra two end -->
+     <!-- newsletter start -->
+     <section class="container newsletter">
+        <div class="news-form">
+            <h3>Newsletter</h3>
+            <p>Get your daily dose of travel news & tips. Sign <br>up today!</p>
+            <hr>
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input required type="email" placeholder="Enter your email">
+                <button class="news-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="news-img">
+            <img src="Images/rec.png">
+            <div class="news-img-text">
+                <h4>trailblazetravels.com</h4>
+                <h2>Save up to 70%</h2>
+            </div>
+        </div>
+    </section>
 
-                <div class="b">
-                    <ul>
-                        <li><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</li>
-                        <li><i class="fa-solid fa-person"></i><i class="fa-solid fa-person"></i> Max: 10</li>
-                        <li><i class="fa-solid fa-location-dot"></i> Malaysia</li>
-                    </ul>
-                    <h2>Tour To Satorini</h2>
-                    <p>Embark on an enchanting journey with Trailblaze Travels - our Tour to Santorini promises breathtaking landscapes, vibrant culture, and cherished memories</p>
-                    <h3>Price: $1300-$1500</h3>
-                    <button>Book Now</button>
-                </div>
-            </div>
-            <div class="satorini-2">
-                <div class="c">
-                    <ul>
-                        <li><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</li>
-                        <li><i class="fa-solid fa-person"></i><i class="fa-solid fa-person"></i> Max: 10</li>
-                        <li><i class="fa-solid fa-location-dot"></i> Malaysia</li>
-                    </ul>
-                    <h2>Tour To Satorini</h2>
-                    <p>Embark on an enchanting journey with Trailblaze Travels - our Tour to Santorini promises breathtaking landscapes, vibrant culture, and cherished memories</p>
-                    <h3>Price: $1300-$1500</h3>
-                    <button>Book Now</button>
-                </div>
-            </div>
-            <div class="satorini-1 satorini-3">
-
-                <div class="b">
-                    <ul>
-                        <li><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</li>
-                        <li><i class="fa-solid fa-person"></i><i class="fa-solid fa-person"></i> Max: 10</li>
-                        <li><i class="fa-solid fa-location-dot"></i> Malaysia</li>
-                    </ul>
-                    <h2>Tour To Satorini</h2>
-                    <p>Embark on an enchanting journey with Trailblaze Travels - our Tour to Santorini promises breathtaking landscapes, vibrant culture, and cherished memories</p>
-                    <h3>Price: $1300-$1500</h3>
-                    <button>Book Now</button>
-                </div>
-            </div>
-        </section>
-        <button class=" satorini-btn">See All Pakage</button>
-        <section class="container my-section1">
-            <div class="mysection-text">
-                <h2>Paracycling Escapades Unleashed</h2>
-                <p>Tailored Adventures: From customizable outdoor experiences to exhilarating paracycling, our agency
-                    transforms your preferences into unforgettable moments. Explore Nepal's beauty at your pace with
-                    activities designed for every adventurer.</p>
-                <button class="my-sec-btn">Book Now</button>
-            </div>
-            <div class="video">
-                <img src="Images/photo-1601024445121-e5b82f020549.png" alt="">
-            </div>
-        </section>
-        <section class="container">
-            <h2 style="text-align: center;    color: #131318;
-        font-family: Mulish;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        margin-bottom: 24px;">Travellers Review</h2>
-            <div class="review">
-                <div class="rev-text">
-                    <h2>Mount Everest Base Camp, Nepal</h1>
-                        <p>Absolutely! The wordings convey a positive and grateful sentiment, reflecting well on your
-                            agency. It captures the essence of a memorable and successful experience with Trailblaze
-                            Travels. If this aligns with the kind of feedback you want to showcase, it's a great choice
-                            for your customer reviews section. </p>
-                </div>
-                <div class="rev-photo">
-                    <img src="Images/everest-basecamp-life-er-camp_3x2.png" alt="">
-                </div>
-            </div>
-            <div class="review">
-                <div class="rev-text">
-                    <h2>Thailand</h1>
-                        <p>Embarking on the Thai adventure with Trailblaze Travels was a sensory delight! From the
-                            vibrant markets of Bangkok to the serene beaches of Phuket, every moment was a tapestry of
-                            colors and flavors. The immersion, expertly curated itinerary made journey treasure. </p>
-                </div>
-                <div class="rev-photo">
-                    <img src="Images/flatten1.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="container newsletter">
-            <div class="news-form">
-                <h3>Newsletter</h3>
-                <p>Get your daily dose of travel news & tips. Sign <br>up today!</p>
-                <hr>
-                <form>
-                    <input type="text" placeholder="Enter your name">
-                    <input required type="email" placeholder="Enter your email">
-                    <button class="news-btn">Subscribe</button>
-                </form>
-            </div>
-            <div class="news-img">
-                <img src="Images/rec.png">
-                <div class="news-img-text">
-                    <h4>trailblazetravels.com</h4>
-                    <h2>Save up to 70%</h2>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- newsletter end -->
+    </menu>
     <footer>
 
         <section class="container footer">
@@ -283,5 +317,4 @@
 
     </footer>
 </body>
-
 </html>
