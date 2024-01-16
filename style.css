@@ -5,8 +5,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    transition: transform 1s ease;
+}
 button:hover{
     cursor: pointer;
+    transform: scale(1.1);
+}
+.logo h3{
+    transition: transform 1s ease;
+}
+.logo h3:hover{
+    transform: scale(1.1);
+}
+hr:hover{
+    transform: scale(1.1);
+    color: #FF5400;
+    opacity: 1;
+}
+input{
+    transition: transform 1s ease;
+}
+input:hover{
+    transform: scale(1.1);
+}
+.des-img{
+    transition: transform 1s ease;
+}
+.des-img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.rev-text,.rev-photo{
+    transition: transform 1s ease;
+}
+.rev-text:hover{
+    transform: scale(1.1);
+}
+.rev-photo:hover{
+    transform: scale(1.1);
+}
+.fa-facebook,.fa-twitter,.fa-instagram,.fa-github{
+    transition: transform 1s ease;
+}
+.fa-facebook:hover{
+    transform: scale(1.1);
+}
+.fa-twitter:hover{
+    transform: scale(1.1);
+}
+.fa-instagram:hover{
+    transform: scale(1.1);
+}
+.fa-github:hover{
+    transform: scale(1.1);
 }
 .container {
     width: 82%;
@@ -27,8 +79,9 @@ button:hover{
     align-items: center;
     gap: 16px;
 }
-
-
+.navbar .logo:hover{
+    transform: scale(1,1);
+}
 .navbar .logo h3 {
     color: #131318;
     font-size: 36px;
